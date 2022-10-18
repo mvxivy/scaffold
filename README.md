@@ -1,9 +1,14 @@
 # Scaffold
 
+### install tool 
+```sh
+npm install -D @mvxiv/scaffold
+```
+
 ### Scaffold vue component
 
 ```sh
-$ scaffold ComponentName
+$ npx scaffold ComponentName
 ```
 
 that makes this structure in your project directory
