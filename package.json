@@ -1,0 +1,23 @@
+{
+  "name": "@mvxiv/scaffold",
+  "version": "0.1.0",
+  "description": "scaffolding vue components",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvxivy/scaffold"
+  },
+  "main": "create.js",
+  "bin": {
+    "scaffold": "create-component.js"
+  },
+  "files": [
+    "lib/",
+    "create-component.js",
+    "LICENSE"
+  ],
+  "keywords": [],
+  "author": "Maksim Ivanov <vonavimax@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
