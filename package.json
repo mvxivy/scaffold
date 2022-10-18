@@ -1,7 +1,8 @@
 {
   "name": "@mvxiv/scaffold",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "scaffolding vue components",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/mvxivy/scaffold"
