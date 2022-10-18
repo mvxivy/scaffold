@@ -2,13 +2,12 @@
 
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve as pathResolve } from 'node:path';
-import { pascalCaseToKebabCase } from './utils';
-import { ComponentNameException } from './exceptions';
-
+import { pascalCaseToKebabCase } from './lib/utils.js';
+import { ComponentNameException } from './lib/exceptions.js';
+import { COMPONENTS_PATH } from './lib/constants.js';
+import { newVueBoilerPlate, newTestBoilerplate, newSCSSBoilerPlate } from './lib/templates.js';
 
 const [componentName] = process.argv.slice(2);
-
-
 
 async function createComponent(componentName) {
   if(componentName === undefined) throw new ComponentNameException('Enter a component name!');
