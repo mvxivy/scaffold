@@ -1,18 +1,18 @@
 {
   "name": "@mvxiv/scaffold",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "scaffolding vue components",
   "repository": {
     "type": "git",
     "url": "https://github.com/mvxivy/scaffold"
   },
-  "main": "create-component.js",
+  "main": "cli.js",
   "bin": {
-    "scaffold": "create-component.js"
+    "scaffold": "cli.js"
   },
   "files": [
     "lib/",
-    "create-component.js",
+    "cli.js",
     "LICENSE"
   ],
   "keywords": [],
