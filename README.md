@@ -3,7 +3,7 @@
 ### Scaffold vue component
 
 ```sh
-$ create ComponentName
+$ scaffold ComponentName
 ```
 
 that makes this structure in your project directory
