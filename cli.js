@@ -5,7 +5,7 @@ import { resolve as pathResolve } from 'node:path';
 import { pascalCaseToKebabCase } from './lib/utils.js';
 import { ComponentNameException } from './lib/exceptions.js';
 import { COMPONENTS_PATH } from './lib/constants.js';
-import { newVueBoilerPlate, newTestBoilerplate, newSCSSBoilerPlate } from './lib/templates.js';
+import { newVueBoilerPlate, newTestBoilerplate, newSCSSBoilerPlate, newIndexBoilerPlate } from './lib/templates.js';
 
 const [componentName] = process.argv.slice(2);
 
@@ -22,9 +22,10 @@ async function createComponent(componentName) {
   }
   
   const filePromises = [
-    writeFile(`${componentDir}/${componentName}.vue`, newVueBoilerPlate(componentName), { encoding: 'utf8' }),
+    writeFile(`${componentDir}/${componentName}.vue`, newVueBoilerPlate(componentName, pascalCaseToKebabCase), { encoding: 'utf8' }),
     writeFile(`${componentDir}/${componentName}.spec.ts`, newTestBoilerplate(componentName), { encoding: 'utf8' }),
     writeFile(`${componentDir}/${componentName}.scss`, newSCSSBoilerPlate(pascalCaseToKebabCase(componentName)), { encoding: 'utf8' }),
+    writeFile(`${componentDir}/${componentName}.ts`, newIndexBoilerPlate(componentName), { encoding: 'utf8' }),
   ]
 
   try {
