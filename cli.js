@@ -25,7 +25,7 @@ async function createComponent(componentName) {
     writeFile(`${componentDir}/${componentName}.vue`, newVueBoilerPlate(componentName, pascalCaseToKebabCase), { encoding: 'utf8' }),
     writeFile(`${componentDir}/${componentName}.spec.ts`, newTestBoilerplate(componentName), { encoding: 'utf8' }),
     writeFile(`${componentDir}/${componentName}.scss`, newSCSSBoilerPlate(pascalCaseToKebabCase(componentName)), { encoding: 'utf8' }),
-    writeFile(`${componentDir}/${componentName}.ts`, newIndexBoilerPlate(componentName), { encoding: 'utf8' }),
+    writeFile(`${componentDir}/index.ts`, newIndexBoilerPlate(componentName), { encoding: 'utf8' }),
   ]
 
   try {

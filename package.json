@@ -1,6 +1,6 @@
 {
   "name": "@mvxiv/scaffold",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "scaffolding vue components",
   "type": "module",
   "repository": {
